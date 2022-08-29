@@ -1,0 +1,175 @@
+
+.top{
+    z-index: 9999999;
+    width: 100%;
+    padding: 10px 0;
+    background-color:   #fff;
+    position: sticky;
+    top:0;
+    display: flex; /* lembrando que por padrão é na linha e nao coluna*/
+    align-items: center; /* alinhando os elementos dentro da div */
+    font-family: 'Josefin Sans',sans-serif;
+    border-bottom: solid burlywood 2px;
+}
+
+.navbar{
+    width: 100%;
+}
+.content{
+    padding: 0 30px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.top-left{
+
+}
+.top-right{
+    
+}
+
+.navbar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a{
+    color:#fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.navbar .menu-list{
+     display: inline-flex;
+}
+
+.menu-list li{
+    list-style: none;
+}
+
+
+.menu-list .menu-list-item{
+    color:#444
+}
+.menu-list .menu-list-item .iconRes{
+    display: none;
+    margin-right:10px;
+}
+
+a.logo-text{
+    color:#444;
+    font-size: 24px;
+    font-weight:600;
+}
+.logo-menu-responsive{
+    display:none;
+}
+.resposive-itens {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.resposive-itens a{
+    color: #222;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: solid 3px #444;
+}
+
+
+
+.logo-img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-right ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-list li a{
+        color: #ffff;
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 25px;
+        text-decoration: none;
+        transition: all  0.5s ease;
+}
+
+.menu-list li a:hover{
+    color: #3a92d0;
+}
+
+.icon{
+    color:#333;
+    font-size: 20;
+    cursor: pointer;
+    z-index: 100;
+    display: none;
+}
+
+.icon.cancel-btn {
+    position: absolute;
+    right:30px;
+    top:30px;
+}
+.menu-list .wave{
+    display: none;
+}
+
+
+@media (max-width: 864px){
+     .icon{
+        display: block;
+     }
+     .menu-list .menu-list-item .iconRes{
+        display: inline-block;
+     }
+     .menu-list .wave{
+        display: inline;
+        position: relative;
+        bottom: -10%;
+        right: 0;
+        left: 0;
+     }
+     .icon.menu-btn.hide{
+        display: none;
+     }
+     .logo-menu-responsive{
+        display:block;
+     }
+    
+     .navbar .menu-list{
+        position: fixed;
+        top:0;
+        left:-100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        background:white;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+
+    .navbar .menu-list.active{
+        left: 0;
+    }
+    .navbar .menu-list li{
+        margin-top: 16%;
+    }
+    .navbar .menu-list li a{
+        font-size: 23px;
+    }
+}

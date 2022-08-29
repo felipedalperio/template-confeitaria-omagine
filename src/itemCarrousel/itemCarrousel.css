@@ -1,0 +1,14 @@
+.item-carrousel{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 350px;
+      width: 100%;
+      font-size: 4em;
+}
+
+.img-item-carrousel{
+   width: 100%;
+   object-fit: cover;
+   height: 100%;
+}

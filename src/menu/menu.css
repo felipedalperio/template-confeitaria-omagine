@@ -1,0 +1,107 @@
+.menu{
+      display: flex;
+      z-index: 1000;
+}
+.menu-left{
+      flex:3;
+      flex-direction: column;
+      padding: 30px;
+
+}
+.menu-center{
+      flex:5;
+      flex-direction: column;
+      padding: 30px;
+}
+.menu-right{
+      flex:4;
+      flex-direction: column;
+      padding: 30px;
+      list-style-type: none;
+      margin: 0;
+
+}
+
+
+.social-menu a{
+      display: flex;
+      color:#444;
+      font-size: 22px;
+      text-decoration: none;
+      flex-direction: column;
+      justify-content: center;
+}
+
+.menu-left p{
+      justify-content: center;
+      color:#444;
+      font-size: 26px;
+}
+.menu-center-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+.bem-vindo-menu{
+      font-size:30px;
+}
+.barra-pesquisa{
+      position: relative;
+      flex-direction: row;
+}
+.logo-menu{
+      padding-bottom: 10px;
+      
+}
+
+.logo-menu p {
+      border: solid 2px black;
+      border-radius: 10px;
+      width: auto;
+      padding: 0 20px;
+      font-size: 30px;
+}
+.iconP{
+      position: absolute;
+      top:12px;
+      right: 10px;
+}
+.search-menu{
+      width: 300px;
+      border: none;
+      padding: 10px;
+      border: solid 2px #666;
+      border-radius: 10px;
+}
+
+.menu-right ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  }
+
+.menu-menu {
+      display: flex;
+      flex-direction: column;
+      color: #444;
+      border: solid 2px #666;
+      text-align: center;
+      border-bottom: none;
+      font-size: 18px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all  0.5s ease;
+}
+.menu-menu li{
+      justify-content: center;
+      justify-items: center;
+      border-bottom: solid 2px #666;
+}
+
+
+.menu-menu li a:hover{
+  color: #3a92d0;
+  cursor: pointer;
+}

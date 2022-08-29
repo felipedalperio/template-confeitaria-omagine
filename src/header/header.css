@@ -1,0 +1,29 @@
+.header{
+     width: 100%;
+     height: 91vh;
+     scroll-margin-top: calc(50px + 2.5em)
+}
+
+
+.header-img{
+     height: 100%;
+     width: 100%;
+     background-image: url('../img/wallpaper_header_monster.png');
+     object-fit:cover; 
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed;
+}
+
+@media (max-width: 864px){
+     .header-img{
+          background-attachment:scroll;
+          background-image: url('../img/wallpaper_header_mobile_monster.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          object-fit:cover;
+     }
+}
+
+
+
