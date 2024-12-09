@@ -16,9 +16,6 @@ export default function Topbar() {
                                 <div className="content">
                                         <div className="top-left">
                                                 <div className="logo">
-                                                        <img className="logo-img"
-                                                                src="https://icons-for-free.com/iconfiles/png/512/cookie-1319971784454690183.png"
-                                                                alt="" />
                                                         <a className="logo-text" href="#">Omagine</a>
                                                 </div>
                                         </div>
